@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FileClass</class>
+ <widget class="QMainWindow" name="FileClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>296</width>
+    <height>196</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>296</width>
+    <height>150</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>300</width>
+    <height>300</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>File</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="styleSheet">
+    <string notr="true">QWidget{ color: blue; }</string>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="0">
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:700;&quot;&gt;存储设置&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <spacer name="verticalSpacer_2">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>40</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="3" column="0">
+     <spacer name="verticalSpacer">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>40</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="2" column="0">
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>OK图：</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="OK_lineEdit">
+        <property name="styleSheet">
+         <string notr="true">QLineEdit
+{
+	border: 1px solid gray; /* 边框 */
+	border-radius: 4px;     /* 边框圆角 */
+	padding: 0 8px;         /* 内容与边框距离 */
+	background: white;      /* 背景颜色 */
+	selection-background-color: darkgray; /*所选内容的背景颜色*/
+}</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="1">
+       <spacer name="verticalSpacer_5">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="5" column="0">
+       <widget class="QLabel" name="label_3">
+        <property name="text">
+         <string>日志：</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QPushButton" name="OKPath_pushButton">
+        <property name="minimumSize">
+         <size>
+          <width>60</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+	color: rgb(0, 0, 0);
+	background-color: rgba(255, 255, 255,0);
+	border:2px outset rgb(100, 100, 100);
+	border-radius:8px;
+  	text-align: center center;
+} 
+
+/*鼠标放在按钮上方*/
+QPushButton:hover:enabled {
+	background-color: rgba(255, 255, 255,150);
+	border:2px outset rgba(100, 100, 100,150);
+} 
+
+/*鼠标点击按钮*/
+QPushButton:pressed:enabled {
+	background-color: rgba(255, 255, 255,255);
+	border:4px outset rgba(100, 100, 100,255);
+}
+
+QPushButton:enabled{ 
+	color: rgb(0, 0, 0);
+	background-color: rgba(255, 255, 255,0);
+	border:2px outset rgb(100, 100, 100);
+}
+
+QPushButton:disabled{ 
+	color: rgb(150, 150, 150);
+	background-color: rgba(150, 150, 150,0);
+	border:2px outset rgb(100, 100, 100);
+}</string>
+        </property>
+        <property name="text">
+         <string>浏览</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QLineEdit" name="NG_lineEdit">
+        <property name="styleSheet">
+         <string notr="true">QLineEdit
+{
+	border: 1px solid gray; /* 边框 */
+	border-radius: 4px;     /* 边框圆角 */
+	padding: 0 8px;         /* 内容与边框距离 */
+	background: white;      /* 背景颜色 */
+	selection-background-color: darkgray; /*所选内容的背景颜色*/
+}</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="0">
+       <widget class="QLabel" name="label_5">
+        <property name="text">
+         <string>存储天数：</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="1">
+       <widget class="QLineEdit" name="Log_lineEdit">
+        <property name="styleSheet">
+         <string notr="true">QLineEdit
+{
+	border: 1px solid gray; /* 边框 */
+	border-radius: 4px;     /* 边框圆角 */
+	padding: 0 8px;         /* 内容与边框距离 */
+	background: white;      /* 背景颜色 */
+	selection-background-color: darkgray; /*所选内容的背景颜色*/
+}</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="1">
+       <widget class="QLineEdit" name="SaveTime_lineEdit">
+        <property name="styleSheet">
+         <string notr="true">QLineEdit
+{
+	border: 1px solid gray; /* 边框 */
+	border-radius: 4px;     /* 边框圆角 */
+	padding: 0 8px;         /* 内容与边框距离 */
+	background: white;      /* 背景颜色 */
+	selection-background-color: darkgray; /*所选内容的背景颜色*/
+}</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <spacer name="verticalSpacer_3">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="4" column="1">
+       <spacer name="verticalSpacer_4">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="3" column="2">
+       <widget class="QPushButton" name="NGPath_pushButton">
+        <property name="minimumSize">
+         <size>
+          <width>60</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+	color: rgb(0, 0, 0);
+	background-color: rgba(255, 255, 255,0);
+	border:2px outset rgb(100, 100, 100);
+	border-radius:8px;
+  	text-align: center center;
+} 
+
+/*鼠标放在按钮上方*/
+QPushButton:hover:enabled {
+	background-color: rgba(255, 255, 255,150);
+	border:2px outset rgba(100, 100, 100,150);
+} 
+
+/*鼠标点击按钮*/
+QPushButton:pressed:enabled {
+	background-color: rgba(255, 255, 255,255);
+	border:4px outset rgba(100, 100, 100,255);
+}
+
+QPushButton:enabled{ 
+	color: rgb(0, 0, 0);
+	background-color: rgba(255, 255, 255,0);
+	border:2px outset rgb(100, 100, 100);
+}
+
+QPushButton:disabled{ 
+	color: rgb(150, 150, 150);
+	background-color: rgba(150, 150, 150,0);
+	border:2px outset rgb(100, 100, 100);
+}</string>
+        </property>
+        <property name="text">
+         <string>浏览</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="2">
+       <widget class="QPushButton" name="LogPath_pushButton">
+        <property name="minimumSize">
+         <size>
+          <width>60</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+	color: rgb(0, 0, 0);
+	background-color: rgba(255, 255, 255,0);
+	border:2px outset rgb(100, 100, 100);
+	border-radius:8px;
+  	text-align: center center;
+} 
+
+/*鼠标放在按钮上方*/
+QPushButton:hover:enabled {
+	background-color: rgba(255, 255, 255,150);
+	border:2px outset rgba(100, 100, 100,150);
+} 
+
+/*鼠标点击按钮*/
+QPushButton:pressed:enabled {
+	background-color: rgba(255, 255, 255,255);
+	border:4px outset rgba(100, 100, 100,255);
+}
+
+QPushButton:enabled{ 
+	color: rgb(0, 0, 0);
+	background-color: rgba(255, 255, 255,0);
+	border:2px outset rgb(100, 100, 100);
+}
+
+QPushButton:disabled{ 
+	color: rgb(150, 150, 150);
+	background-color: rgba(150, 150, 150,0);
+	border:2px outset rgb(100, 100, 100);
+}</string>
+        </property>
+        <property name="text">
+         <string>浏览</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="label_4">
+        <property name="text">
+         <string>NG图：</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>296</width>
+     <height>17</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>NGPath_pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>FileClass</receiver>
+   <slot>NGPath_pushButton_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>272</x>
+     <y>99</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>293</x>
+     <y>91</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>OKPath_pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>FileClass</receiver>
+   <slot>OKPath_pushButton_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>288</x>
+     <y>67</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>259</x>
+     <y>119</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>SaveTime_lineEdit</sender>
+   <signal>editingFinished()</signal>
+   <receiver>FileClass</receiver>
+   <slot>SaveTime_lineEdit_Change()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>224</x>
+     <y>264</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>250</x>
+     <y>167</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>LogPath_pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>FileClass</receiver>
+   <slot>LogPath_pushButton_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>288</x>
+     <y>226</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>244</x>
+     <y>96</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>OKPath_pushButton_clicked()</slot>
+  <slot>LogPath_pushButton_clicked()</slot>
+  <slot>NGPath_pushButton_clicked()</slot>
+  <slot>SaveTime_lineEdit_Change()</slot>
+  <slot>INSIDEPath_pushButton_clicked()</slot>
+  <slot>RFIDPath_pushButton_clicked()</slot>
+ </slots>
+</ui>
